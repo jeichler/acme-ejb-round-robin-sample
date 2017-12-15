@@ -1,6 +1,6 @@
 package com.acme.jboss.ejb.client;
 
-public class RoundRobinDeploymentNodeSelectorTest extends NodeSelectorTest<RoundRobinDeploymentNodeSelector> {
+public class RoundRobinDeploymentNodeSelectorTest extends AbstractRoundRobinNodeSelectorTest<RoundRobinDeploymentNodeSelector> {
 
 	@Override
 	RoundRobinDeploymentNodeSelector createCut() {

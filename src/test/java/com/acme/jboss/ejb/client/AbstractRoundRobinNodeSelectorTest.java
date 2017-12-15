@@ -8,7 +8,7 @@ import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
-public abstract class NodeSelectorTest<T> {
+public abstract class AbstractRoundRobinNodeSelectorTest<T> {
 
 	private static final String NODE1 = "node1";
 	private static final String NODE2 = "node2";
@@ -35,7 +35,7 @@ public abstract class NodeSelectorTest<T> {
 	abstract String executeNodeCallOneNode(final T cut, final String[] onlyOneNode);
 
 	/**
-	 * @see NodeSelectorTest#executeNodeCallMultipleNodes(Object, String[])
+	 * @see AbstractRoundRobinNodeSelectorTest#executeNodeCallMultipleNodes(Object, String[])
 	 */
 	abstract String executeNodeCallMultipleNodes(final T cut, final String[] multipleNodes);
 
